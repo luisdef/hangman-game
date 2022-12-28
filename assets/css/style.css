@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@font-face {
+    font-family: 'Crackman';
+    src: url('../imgs/crackman.regular.ttf');
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,p,span,div,input,a,button,select,textarea {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0095a0;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    user-select: none;
+    padding: 1em 0;
+}
+.logo a {
+    text-decoration: none;
+}
+.title {
+    font-family: 'Crackman', sans-serif;
+    font-size: 3.5em;
+    padding: .3em;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .6em;
+    padding: 1em 0;
+    width: 100%;
+}
+.enter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .6em;
+    padding: 1em 0;
+    width: 100%;
+}
+.enter #nickname {
+    width: 300px;
+    text-align: center;
+    border: 2px solid #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 8px;
+    padding: 1em;
+    background-color: #0095a0;
+}
+.enter #nickname::placeholder {
+    color: #eeeeee55;
+}
+.enter #play-btn {
+    width: 300px;
+    border: 2px solid #fff;
+    background-color: #0095a0;
+    border-radius: 8px;
+    color: #fff;
+    padding: .6em;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.enter #play-btn:hover {
+    background-color: #fff;
+    color: #0095a0;
+}
+#reset-nickname {
+    margin: 2em 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: .9em;
+    transition: all .2s ease-in-out;
+    padding: .5em;
+    border-radius: 8px;
+}
+#reset-nickname:hover {
+    background-color: #fff;
+    color: #0095a0;
+}
+.footer {
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+    padding: 1em 0;
+}
