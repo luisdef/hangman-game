@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/imgs/h.png" type="image/png">
+    <title>HangMan</title>
+</head>
+<body>
+    <header class="logo">
+        <a href="/">
+            <h1 class="title" title="HangMan game">HANGMAN</h1>
+        </a>
+    </header>
+
+    <section class="about">
+        <p>Example</p>
+        <p>Example</p>
+        <p>Example</p>
+        <p>Example</p>
+    </section>
+
+    <main class="enter">
+        <p id="player-name">Nome do jogador: </p>
+        <p id="highscore">Recorde: </p>
+        <input
+            id="nickname" type="text"
+            name="nickname" id="nickname"
+            placeholder="Seu nome..."
+            minlength="3"
+            maxlength="15"
+        >
+        <button style="display: none" id="play-btn">Jogar!</button>
+
+        <button id="reset-nickname">Excluir dados do jogador</button>
+    </main>
+
+    <footer class="footer">
+        <p>Produzido por <em><a target="_blank" href="https://github.com/luisdef">luisdef</a></em>.</p>
+    </footer>
+    <!-- Scripts of the page -->
+    <script src="assets/js/setLanguageByBrowser.js"></script>
+    <script src="assets/js/allowPlay.js"></script>
+    <script src="assets/js/resetPlayer.js"></script>
+</body>
+</html>
