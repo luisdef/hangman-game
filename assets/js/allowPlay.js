@@ -4,10 +4,14 @@ const buttonResetDataFromPlayer = document.getElementById("reset-nickname");
 const tagPlayerName = document.getElementById("player-name");
 const tagHighScore = document.getElementById("highscore");
 
+const explanationWithoutUserData = document.querySelector(".no-data");
+const explanationWithUserData = document.querySelector(".with-data");
+
 const nicknameArea = document.getElementById("nickname");
 const playButton = document.getElementById("play-btn");
 
 if (nickname) {
+    explanationWithoutUserData.style.display = "none";
     tagPlayerName.innerHTML += nickname;
     playButton.style.display = "block";
     nicknameArea.style.display = "none";
@@ -16,6 +20,7 @@ if (nickname) {
         window.location.href = "game.html";
     }
 } else {
+    explanationWithUserData.style.display = "none";
     tagPlayerName.style.display = "none";
     tagHighScore.style.display = "none";
     buttonResetDataFromPlayer.style.display = "none";
