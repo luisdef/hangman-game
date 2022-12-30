@@ -107,14 +107,19 @@ body {
     background-color: #fff;
     color: #0095a0;
 }
+.game {
+    display: flex;
+    column-gap: 2em;
+    align-items: center;
+}
 .box-hangman {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 .box-hangman img {
     filter: invert(100%);
+    max-width: 300px;
 }
 .footer {
     opacity: 0.8;
