@@ -18,7 +18,7 @@ if (nickname) {
 
     playButton.onclick = () => {
         window.location.href = "game.html";
-    }
+    };
 } else {
     explanationWithUserData.style.display = "none";
     tagPlayerName.style.display = "none";
@@ -28,8 +28,7 @@ if (nickname) {
     function verifyIfHasANickname() {
         if (nicknameArea.value.length >= 3 && nicknameArea.value.length <= 15) {
             playButton.style.display = "block";
-        }
-        else {
+        } else {
             playButton.style.display = "none";
         }
     }
@@ -38,10 +37,10 @@ if (nickname) {
 
     nicknameArea.oninput = () => {
         verifyIfHasANickname();
-    }
+    };
 
     playButton.onclick = () => {
         localStorage.setItem("nickname", nicknameArea.value);
         window.location.href = "game.html";
-    }
+    };
 }
