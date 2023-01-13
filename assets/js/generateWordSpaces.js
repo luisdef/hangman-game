@@ -14,4 +14,13 @@ fetch("assets/js/contentOfWords.json")
         let defaulHint = document.createElement("p");
         defaulHint.innerText = raffledWordObject.hints[0];
         boxOfHints.appendChild(defaulHint);
+
+        const arrayOfLetters = raffledWordObject.word.split("");
+        arrayOfLetters.forEach((letter) => {
+            let letterOfTheRaffledWord = document.createElement("span");
+            letterOfTheRaffledWord.className = "letter not-discovered";
+            letterOfTheRaffledWord.innerText = "x";
+
+            boxOfTheWord.appendChild(letterOfTheRaffledWord);
+        });
     });
