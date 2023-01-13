@@ -112,6 +112,49 @@ body {
     column-gap: 2em;
     align-items: center;
 }
+.word {
+    display: flex;
+}
+.word span {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 4px 8px;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+}
+.word .not-discovered {
+    border-bottom: 4px solid #fff;
+}
+.alphabet {
+    display: flex;
+    max-width: 260px;
+    flex-wrap: wrap;
+}
+.alphabet span {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #0095a0;
+    border-radius: 4px;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    transition: 0.2s;
+}
+.alphabet span:hover {
+    opacity: 0.95;
+    transform: translateY(-2px);
+}
 .hints {
     display: flex;
     flex-direction: column;
