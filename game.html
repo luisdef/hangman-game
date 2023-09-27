@@ -20,14 +20,14 @@
     </div>
 
     <div class="hints">
-
+    </div>
+    
+    <div class="msgs">
+        <span class="click-status wrong">Oops, a letra X não está na palavra.</span>
+        <span class="click-status right">A letra X foi encontrada na palavra.</span>
     </div>
 
     <div class="game">
-        <div class="box-hangman">
-            <img src="assets/imgs/stages/hangman_8.png" title="Hangman" alt="Hangman">
-        </div>
-
         <div class="word">
         </div>
 
@@ -61,11 +61,18 @@
         </div>
     </div>
 
+    <div class="hangdude">
+        <div class="box-hangman">
+            <img src="assets/imgs/stages/hangman_0.png" title="Hangman" alt="Hangman" id="hangman-image">
+        </div>
+    </div>
+
     <footer class="footer">
         <p>Produzido por <em><a target="_blank" href="https://github.com/luisdef">luisdef</a></em>.</p>
     </footer>
-    <script src="assets/js/verifyAndShowNickname.js"></script>
-    <script src="assets/js/setLanguageByBrowser.js"></script>
-    <script src="assets/js/generateWordSpaces.js"></script>
+    <script type="module" src="assets/js/verifyAndShowNickname.js"></script>
+    <script type="module" src="assets/js/setLanguageByBrowser.js"></script>
+    <script type="module" src="assets/js/generateWordSpaces.js"></script>
+    <script type="module" src="assets/js/scanWordClicks.js"></script>
 </body>
 </html>
