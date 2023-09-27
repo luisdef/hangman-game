@@ -1,6 +1,8 @@
 const boxOfTheWord = document.querySelector("div.word");
 const boxOfHints = document.querySelector("div.hints");
 
+export let lettersToBeDiscovered = [];
+
 fetch("assets/js/contentOfWords.json")
     .then((response) => {
         return response.json();
@@ -11,6 +13,8 @@ fetch("assets/js/contentOfWords.json")
 
         const raffledWordObject = arrayOfWords.at(raffledIndex);
 
+        console.log(raffledWordObject);
+
         let defaulHint = document.createElement("p");
         defaulHint.innerText = raffledWordObject.hints[0];
         boxOfHints.appendChild(defaulHint);
@@ -19,8 +23,11 @@ fetch("assets/js/contentOfWords.json")
         arrayOfLetters.forEach((letter) => {
             let letterOfTheRaffledWord = document.createElement("span");
             letterOfTheRaffledWord.className = "letter not-discovered";
-            letterOfTheRaffledWord.innerText = "x";
+            letterOfTheRaffledWord.innerText = "?";
+
+            lettersToBeDiscovered.push(letter);
 
             boxOfTheWord.appendChild(letterOfTheRaffledWord);
         });
+
     });
