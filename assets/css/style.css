@@ -109,7 +109,8 @@ body {
 }
 .game {
     display: flex;
-    column-gap: 2em;
+    column-gap: 4em;
+    padding-bottom: 2em;
     align-items: center;
 }
 .word {
@@ -127,7 +128,7 @@ body {
     height: 35px;
     border-radius: 4px;
 }
-.word .not-discovered {
+.word .not-discovered, .word .discovered {
     border-bottom: 4px solid #fff;
 }
 .alphabet {
@@ -172,6 +173,20 @@ body {
 .hints p::before {
     content: "■";
     margin: 0px 4px 4px 0;
+}
+.msgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+}
+.click-status {
+    padding: .5em 1em;
+    border-radius: 12px;
+}.click-status.wrong {
+    background-color: #cc4444;
+}.click-status.right {
+    background-color: #36976a;
 }
 .box-hangman {
     display: flex;
