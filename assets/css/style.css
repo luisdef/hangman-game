@@ -206,3 +206,41 @@ body {
     margin-top: auto;
     padding: 1em 0;
 }
+.end {
+    background-color: #d5d5d599;
+    /* filter: blur(1px);
+    -webkit-filter: blur(8px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.end .msg-won, .end .msg-lose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #36976a;
+    border-radius: 12px;
+    padding: 1em 2em;
+}.end .msg-won a, .end .msg-lose a {
+    background-color: #0095a0;
+    text-decoration: none;
+    padding: .3em;
+    border-radius: 5px;
+    width: max-content;
+    margin-top: .5rem;
+    font-weight: 600;
+}
+.end.msg-lose {
+    border-color: #cc4444;
+}
