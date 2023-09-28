@@ -241,6 +241,6 @@ body {
     margin-top: .5rem;
     font-weight: 600;
 }
-.end.msg-lose {
+.end .msg-lose {
     border-color: #cc4444;
 }
