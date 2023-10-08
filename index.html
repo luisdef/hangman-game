@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/imgs/h.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/imgs/h.png" type="image/png" />
     <title>HangMan</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="logo">
-        <a href="index.html">
-            <h1 class="title" title="HangMan game">HANGMAN</h1>
-        </a>
+      <a href="index.html">
+        <h1 class="title" title="HangMan game">HANGMAN</h1>
+      </a>
     </header>
 
     <section class="about">
-        <div class="text">
-            <p>Bem vindo(a) ao jogo da forca;</p>
-            <p>A partir de uma dica inicial tente descobrir qual é a palavra mencionada;</p>
-            <p>Você terá 8 vidas ao todo;</p>
-            <p>Você terá acesso a duas dicas extras (em breve);</p>
-            <p>Clique nas letras até formar a palavra correta;</p>
-            <p class="no-data">Insira seu nome abaixo para fazer o registro dos seus jogos.</p>
-            <p class="with-data">Caso queira resetar seus dados, exclua os dados do jogador no botão abaixo.</p>
-        </div>
+      <div class="text">
+        <p>Bem vindo(a) ao jogo da forca;</p>
+        <p>
+          A partir de uma dica inicial tente descobrir qual é a palavra
+          mencionada;
+        </p>
+        <p>Você terá 8 vidas ao todo;</p>
+        <p>Você terá acesso a duas dicas extras (em breve);</p>
+        <p>Clique nas letras até formar a palavra correta;</p>
+        <p class="no-data">
+          Insira seu nome abaixo para fazer o registro dos seus jogos.
+        </p>
+        <p class="with-data">
+          Caso queira resetar seus dados, exclua os dados do jogador no botão
+          abaixo.
+        </p>
+      </div>
     </section>
 
     <main class="enter">
-        <p id="player-name">Nome do jogador: </p>
-        <p id="highscore">Recorde: </p>
-        <input
-            id="nickname" type="text"
-            name="nickname" id="nickname"
-            placeholder="Seu nome..."
-            minlength="3"
-            maxlength="15"
-        >
-        <button style="display: none" id="play-btn">Jogar!</button>
+      <p id="player-name">Nome do jogador:</p>
+      <p id="highscore">Recorde:</p>
+      <input
+        id="nickname"
+        type="text"
+        name="nickname"
+        id="nickname"
+        placeholder="Seu nome..."
+        minlength="3"
+        maxlength="15"
+      />
+      <button style="display: none" id="play-btn">Jogar!</button>
 
-        <button id="reset-nickname">Excluir dados do jogador</button>
+      <button id="reset-nickname">Excluir dados do jogador</button>
     </main>
 
     <footer class="footer">
-        <p>Produzido por <em><a target="_blank" href="https://github.com/luisdef">luisdef</a></em>.</p>
+      <p>
+        Produzido por
+        <em><a target="_blank" href="https://github.com/luisdef">luisdef</a></em
+        >.
+      </p>
     </footer>
     <!-- Scripts of the page -->
     <script src="assets/js/setLanguageByBrowser.js"></script>
     <script src="assets/js/allowPlay.js"></script>
     <script src="assets/js/resetPlayer.js"></script>
-</body>
+  </body>
 </html>
