@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/imgs/h.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/imgs/h.png" type="image/png" />
     <title>HangMan</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="logo">
-        <a href="index.html">
-            <h1 class="title" title="HangMan game">HANGMAN</h1>
-        </a>
+      <a href="index.html">
+        <h1 class="title" title="HangMan game">HANGMAN</h1>
+      </a>
     </header>
 
-    <div id="player">
+    <div id="player"></div>
 
-    </div>
+    <div class="hints"></div>
 
-    <div class="hints">
-    </div>
-    
-    <div class="msgs">
-    </div>
+    <div class="msgs"></div>
 
     <div class="game">
-        <div class="word">
-        </div>
+      <div class="word"></div>
 
-        <div class="alphabet">
-            <span class="letter" id="A">A</span>
-            <span class="letter" id="B">B</span>
-            <span class="letter" id="C">C</span>
-            <span class="letter" id="D">D</span>
-            <span class="letter" id="E">E</span>
-            <span class="letter" id="F">F</span>
-            <span class="letter" id="G">G</span>
-            <span class="letter" id="H">H</span>
-            <span class="letter" id="I">I</span>
-            <span class="letter" id="J">J</span>
-            <span class="letter" id="K">K</span>
-            <span class="letter" id="L">L</span>
-            <span class="letter" id="M">M</span>
-            <span class="letter" id="N">N</span>
-            <span class="letter" id="O">O</span>
-            <span class="letter" id="P">P</span>
-            <span class="letter" id="Q">Q</span>
-            <span class="letter" id="R">R</span>
-            <span class="letter" id="S">S</span>
-            <span class="letter" id="T">T</span>
-            <span class="letter" id="U">U</span>
-            <span class="letter" id="V">V</span>
-            <span class="letter" id="W">W</span>
-            <span class="letter" id="X">X</span>
-            <span class="letter" id="Y">Y</span>
-            <span class="letter" id="Z">Z</span>
-        </div>
+      <div class="alphabet">
+        <span class="letter" id="A">A</span>
+        <span class="letter" id="B">B</span>
+        <span class="letter" id="C">C</span>
+        <span class="letter" id="D">D</span>
+        <span class="letter" id="E">E</span>
+        <span class="letter" id="F">F</span>
+        <span class="letter" id="G">G</span>
+        <span class="letter" id="H">H</span>
+        <span class="letter" id="I">I</span>
+        <span class="letter" id="J">J</span>
+        <span class="letter" id="K">K</span>
+        <span class="letter" id="L">L</span>
+        <span class="letter" id="M">M</span>
+        <span class="letter" id="N">N</span>
+        <span class="letter" id="O">O</span>
+        <span class="letter" id="P">P</span>
+        <span class="letter" id="Q">Q</span>
+        <span class="letter" id="R">R</span>
+        <span class="letter" id="S">S</span>
+        <span class="letter" id="T">T</span>
+        <span class="letter" id="U">U</span>
+        <span class="letter" id="V">V</span>
+        <span class="letter" id="W">W</span>
+        <span class="letter" id="X">X</span>
+        <span class="letter" id="Y">Y</span>
+        <span class="letter" id="Z">Z</span>
+      </div>
     </div>
 
     <div class="hangdude">
-        <div class="box-hangman">
-            <img src="assets/imgs/stages/hangman_0.png" title="Hangman" alt="Hangman" id="hangman-image">
-        </div>
+      <div class="box-hangman">
+        <img
+          src="assets/imgs/stages/hangman_0.png"
+          title="Hangman"
+          alt="Hangman"
+          id="hangman-image"
+        />
+      </div>
     </div>
 
     <footer class="footer">
-        <p>Produzido por <em><a target="_blank" href="https://github.com/luisdef">luisdef</a></em>.</p>
+      <p>
+        Produzido por
+        <em><a target="_blank" href="https://github.com/luisdef">luisdef</a></em
+        >.
+      </p>
     </footer>
     <script type="module" src="assets/js/verifyAndShowNickname.js"></script>
     <script type="module" src="assets/js/setLanguageByBrowser.js"></script>
     <script type="module" src="assets/js/generateWordSpaces.js"></script>
     <script type="module" src="assets/js/scanWordClicks.js"></script>
-</body>
+  </body>
 </html>
