@@ -1,4 +1,4 @@
-function disableScroll() {
+export function disableScroll() {
   // Get the current page scroll position in the vertical direction
   scrollTop = window.pageYOffset || document.documentElement.scrollTop
 
@@ -13,6 +13,6 @@ function disableScroll() {
   }
 }
 
-function enableScroll() {
+export function enableScroll() {
   window.onscroll = function () {}
 }
