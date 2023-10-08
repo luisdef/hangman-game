@@ -10,6 +10,7 @@ const placeMessages = document.querySelector(".msgs")
 function winMessage() {
   const box = document.createElement("div")
   box.setAttribute("class", "end")
+  box.setAttribute("id", "end")
 
   const winMessage = document.createElement("div")
   winMessage.setAttribute("class", "msg-won")
@@ -22,11 +23,14 @@ function winMessage() {
   winMessage.append(mainPageButton)
   box.appendChild(winMessage)
   document.body.appendChild(box)
+  window.location.href = "#end"
+  document.body.style = "overflow: hidden"
 }
 
 function loseMessage() {
   const box = document.createElement("div")
   box.setAttribute("class", "end")
+  box.setAttribute("id", "end")
 
   const loseMessage = document.createElement("div")
   loseMessage.setAttribute("class", "msg-lose")
@@ -39,6 +43,8 @@ function loseMessage() {
   loseMessage.append(mainPageButton)
   box.appendChild(loseMessage)
   document.body.appendChild(box)
+  window.location.href = "#end"
+  document.body.style = "overflow: hidden"
 }
 
 function removeMessages() {
@@ -63,6 +69,7 @@ function wrongLetterMessage(wrongLetter) {
 }
 
 function wrongLetterPressed(letterPressed) {
+  hangman.style.display = "block"
   const imageUrlFromHangMan = hangman.getAttribute("src")
   // The link provided by the 'url' is something like:
   // |> 'http://127.0.0.1:5500/assets/imgs/stages/hangman_0.png'
