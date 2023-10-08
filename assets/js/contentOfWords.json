@@ -1,25 +1,21 @@
 {
-    "data": [
-        {
-            "id": 1,
-            "word": "VACA",
-            "hints": [
-                "Um dos principais animais na produção pecuária."
-            ]
-        },
-        {
-            "id": 2,
-            "word": "CARRO",
-            "hints": [
-                "Se locomove sobre rodas."
-            ]
-        },
-        {
-            "id": 3,
-            "word": "RODA",
-            "hints": [
-                "Uma das seis máquinas simples com vastas aplicações no transporte e em máquinas mecânicas."
-            ]
-        }
-    ]
+  "data": [
+    {
+      "id": 1,
+      "word": "VACA",
+      "hints": ["Um dos principais animais na produção pecuária."]
+    },
+    {
+      "id": 2,
+      "word": "CARRO",
+      "hints": ["Se locomove sobre rodas."]
+    },
+    {
+      "id": 3,
+      "word": "RODA",
+      "hints": [
+        "Uma das seis máquinas simples com vastas aplicações no transporte e em máquinas mecânicas."
+      ]
+    }
+  ]
 }
